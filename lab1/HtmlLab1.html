@@ -1,0 +1,176 @@
+<!--
+What is HTML?
+HTML (Hyper Text Markup Language)is the standard markup language for creating Web pages,
+HTML describes the structure of a Web page and consists of a series of elements,
+HTML elements tell the browser how to display the content, and
+label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+-->
+
+<!--
+difference between:
+ [b , strong]
+    The HTML <b> element defines bold text, without any extra importance.
+    The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold.
+ [i,em]
+    The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+    Tip: The <i> tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+    
+    The HTML <em> element defines emphasized text. The content inside is typically displayed in italic.
+    Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+ [s,del]
+    <del> Represents deleted content, typically in a document revision or change, Strikethrough by default,
+        Recognized as deleted by assistive tools.
+    <s> Indicates text that is no longer accurate or relevant but is not meant to represent deletion, Strikethrough by default,
+        No semantic meaning.
+ [s-,ins]
+    The <ins> tag is paired with <del> to indicate added content in a document. 
+    <s> differs because it is not semantically linked to revisions.
+    
+    <ins> Represents newly added content, usually in document revisions, Underlined by default,
+        Indicates added content semantically.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Hello, world">
+    <meta name="author" content="Arwa Mohammed">
+    <meta name="description" content="my first web page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="itiImage.jpeg">
+
+    <title>Hello, world</title>
+</head>
+<body>
+    <b>This text is bold</b>
+    <br>
+    <i>This text is italic</i>
+    <hr>
+    <mark>This text is mark</mark>
+    <br>
+    <del>This text is delete</del>
+    <hr>
+    <ins>This text is underline</ins>
+    <p>this is paragraph</p>
+    
+    <ol type="I">
+        <li>List Item1</li>
+        <ol type="a">
+            <li>Nested Item 1.1</li>
+            <li>Nested Item 1.2</li>
+        </ol>
+        <li>List Item2</li>
+        <ol type="1">
+            <li>Nested Item 2.1</li>
+            <li>Nested Item 2.2</li>
+                <ul style="list-style-type:circle;">
+                    <li>Nested Item 2.2.1</li>
+                    <li>Nested Item 2.2.2</li>
+                        <ul>
+                            <li>Nested Item 2.2.2.1</li>
+                            <li>Nested Item 2.2.2.2</li>
+                        </ul>
+                    <li>Nested Item 2.2.3</li>
+                </ul>
+            <li>Nested Item 2.3</li>
+        </ol>
+        <li>List Item3</li>
+        <ul style="list-style-type:disc;">
+            <li>Nested Item 3.1</li>
+            <li>Nested Item 3.2</li>
+            <li>Nested Item 3.3</li>
+        </ul>
+    </ol>
+    
+    <table border="1">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th colspan="2" rowspan="2">Topic</th>
+        </tr>
+
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m</td>
+            <td rowspan="2">5:00 p.m</td>
+            <td colspan="2">Introduction to XML</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Validity: DTD and relax NG</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m</td>
+            <td>11:00 a.m</td>
+            <td rowspan="3" colspan="2">XPath <hr>
+                XSL Transformations
+            </td>
+        </tr>
+
+        <tr>
+            <td>11:00 a.m</td>
+            <td>2:00 p.m</td>
+        </tr>
+
+        <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+        </tr>
+
+        <tr>
+            <td>Wedensday</td>
+            <td>8:00 a.m</td>
+            <td>12:00 p.m</td>
+            <td colspan="2">XSL Formatting Objects</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <a href="https://iti.gov.eg/home">Information Technology Institute</a>
+    <a href="https://iti.gov.eg/home" target="_blank">ITI another page</a>
+
+    <hr>
+
+    <img src="itilink.jpg" alt="ITI from Relative Path">
+    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="ITI from url">
+
+    <hr>
+
+    <a href="https://iti.gov.eg/home">
+        <img src="itiImage.jpeg" alt="ITI Link">
+    </a>
+
+    <hr>
+
+    <iframe width="770" height="433" src="https://www.youtube.com/embed/leaXAey8fT4" title="Architecture - Gaming Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <hr>
+
+    <video controls autoplay muted>
+        <source src="itivedio.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <audio controls>
+        <source src=".ogg" type="audio/ogg">
+        <source src=".mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+</body>
+</html>
