@@ -1,28 +1,107 @@
+header{
+   display: flex;
+   justify-content: center; 
+}
+
 fieldset{
     background-color: #eee;
+    border-radius: 10px;
+    margin-bottom: 1em;
 }
 
 legend {
     background-color: gray;
     color: white;
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 form {
     background-color: #ffffff;
     width: 50%;
     padding: 2em;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border: 1px solid #ddd;
     border-radius: 10px;
 }
-
-
 
 input {
     padding: 0.5em;
     margin-bottom: 1em;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.class-selector{
+    background-color: #fff;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-button{
+    background-color: gray;
+    color: white;
+    width: 20%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+}
+
+section label{
+    padding: 0.5em;
+    color: #d11212;
+}
+
+input[type="radio"] {
+    accent-color: green;
+}
+
+/*Box Model Practice*/
+#box1{ /*110x110*/
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    padding: 0;
+    margin: 0;
+}
+
+#box2 {/*160x210*/
+    width: 50px;
+    height: 100px;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 0;
+}
+
+#box3 {/*110x60*/
+    width: 100px;
+    height: 50px;
+    border: 5px solid blue;
+    padding: 0;
+    margin: 50px;
+}
+
+#box4 {/*210x210*/
+    width: 100px;
+    height: 100px;
+    border: 5px solid blueviolet;
+    padding: 50px;
+    margin: 50px;
+    box-sizing:content-box;
+}
+
+
+#box5 {/*110x110*/
+    width: 100px;
+    height: 100px;
+    border: 5px solid yellow;
+    padding: 50px;
+    margin: 50px;
+    box-sizing:border-box;
 }
 
